@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home-style.css">
+</head>
+<body>
+
+    <header style="border-bottom: 1px solid black ;">
+        <nav class="container">
+            <div class="navbar">
+                <img src="img/logo.png" alt="" class="logo">
+                <div class="menu">
+                    <a href="#home" class="menu-item">Home</a>
+                    <a href="#package" class="menu-item">Our Package</a>
+                    <a href="#call" class="menu-item">Call Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="hero-title">
+                    <h1>Your Trusted Agent's</h1>
+                    <h6>your happiness is our happiness</h6>
+                </div>
+                <section id="about-contact">
+                    <div class="container">
+                        <div class="about-contact">
+                            <div class="about">
+                                <div id="slide">
+                                    <img src="img/about1.jpg" class="about-image" alt="">
+                                    <img src="img/about2.jpg" class="about-image" alt="">
+                                    <img src="img/about3.jpg" class="about-image" alt="">
+                                </div>
+                                <div>
+                                    <button id="prev">Prev</button>
+                                    <button id="next">Next</button>
+                                </div>
+                                <div class="about-content">
+                                    <div class="content-caption">
+                                        <p>"Liburan menjadi menyenangkan bersama travel agent ku"</p>
+                                    </div>
+                                    <div class="content-person">
+                                        <img src="img/person.png" class="image-person" alt="">
+                                        <div class="person-info">
+                                            <h6>Sarah</h6>
+                                            <p>Ibu Rumah Tangga, 26</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border">
+                                <div class="about-information">
+                                    <h6 class="info-title">
+                                        Our travel agents can provide several benefits to clients, including :
+                                    </h6>
+                                    <ol class="info-list">
+                                        <li>
+                                            <div class="list-number">
+                                                1
+                                            </div>
+                                            <p class="list-paragraph">
+                                                Time-saving: Our travel agents can save their clients' time by doing all the research and planning necessary for their trip.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="list-number">
+                                                2
+                                            </div>
+                                            <p class="list-paragraph">
+                                                Cost savings: Our travel agents have access to exclusive deals, discounts, and promotions.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="list-number">
+                                                3
+                                            </div>
+                                            <p class="list-paragraph">
+                                                Personalized service: Our travel agents can provide personalized service to meet their clients' unique needs and preferences.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="card">
+                                    <div class="card-title">
+                                        <h3>Contact Us</h3>
+                                        <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                                    </div>
+                                    <form action="">
+                                        <label for="">Your Name :</label>
+                                        <input type="text" name="nama" id="nama" class="input" required>
+                                        <label for="">Email Address :</label>
+                                        <input type="text" name="email" id="email" class="input" required>
+                                        <label for="">What are you interested in :</label>
+                                        <select name="interest" id="interest" class="input" required>
+                                            <option selected="selected">-- choose --</option>
+                                            <option value="">Cultural travel</option>
+                                            <option value="">Adventure travel</option>
+                                            <option value="">Leisure travel</option>
+                                            
+                                        </select>
+                                        <input type="submit" value="Submit" onclick="validateForm()">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="package">
+            <div class="container">
+                <div class="package-title">
+                    <h1>Our Package</h1>
+                </div>
+                <section id="package-main">
+                    <div class="container">
+                        <div class="package">
+                            <ol class="package-list">
+                                <li>
+                                    <div class="number-package">
+                                        1
+                                    </div>
+                                    <h3 class="number-h3">
+                                        Bali
+                                    </h3>
+                                </li>
+                                <li>
+                                    <div class="number-package">
+                                        2
+                                    </div>
+                                    <h3 class="number-h3">
+                                        Manado
+                                    </h3>
+                                </li>
+                                <li>
+                                    <div class="number-package">
+                                        3
+                                    </div>
+                                    <h3 class="number-h3">
+                                        Jakarta
+                                    </h3>
+                                </li>
+                            </ol>
+                        </div>
+                        <hr class="border2">
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="call">
+            <div class="container">
+                <div class="call-title">
+                    <h1>Call Us !</h1>
+                    <h6>Feel free to contact us by click button below</h6>
+                </div>
+                <div class="call-button">
+                    <input type="submit" value="Call to Action">
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="company-name">
+                <h3>Agentku</h3>
+                <p>Terms of Service &ensp; Privacy and Policy</p>
+                <p>&#169; 2023 &ensp; Agentku</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
